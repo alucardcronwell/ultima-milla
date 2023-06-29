@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+  <domain-config cleartextTrafficPermitted="true">
+    <domain includeSubdomains="true">localhost</domain>
+    <domain includeSubdomains="true">10.0.1.1</domain>
+    <domain includeSubdomains="true">starken.cl</domain>
+    <domain includeSubdomains="true">cargaora.starken.cl</domain>
+    <domain includeSubdomains="true">172.20.4.165</domain>    
+    <trust-anchors>
+      <certificates src="system" />
+      <certificates src="user" />
+    </trust-anchors>
+  </domain-config>
+  <base-config cleartextTrafficPermitted="false" />
+</network-security-config>
